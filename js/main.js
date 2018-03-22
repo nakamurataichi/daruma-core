@@ -24,7 +24,7 @@ window.addEventListener("load", async () => {
   };
   const speak = message => {
     sendMessage({
-      type: "voice",
+      type: "message",
       message: message
     });
   };
