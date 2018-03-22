@@ -41,7 +41,7 @@ window.addEventListener("load", async () => {
     }
   }, 100);
 
-  socket.onmessgae = message => {
+  socket.onmessage = message => {
     const data = JSON.parse(message.data);
     if (data.type !== "status") {
       return;
