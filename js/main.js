@@ -4,7 +4,7 @@ window.addEventListener("load", async () => {
   const port = i2cAccess.ports.get(1);
   const motor = new DRV8830(port, 0x64);
   await motor.init();
-  const isRage = false;
+  let isRage = false;
 
   const sendMessage = object => {
     socket.send(JSON.stringify(object));
