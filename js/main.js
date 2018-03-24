@@ -69,12 +69,11 @@ window.addEventListener("load", async () => {
     while (isRage) {
       const asyncFunctions = asyncTextGenerater(
         `speak("乾いた")`,
-        "sleep(100)",
         "drive(20)",
-        "sleep(600)",
+        "sleep(3000)",
         `speak("乾いた")`,
-        "drive(10)",
-        "sleep(700)"
+        "drive(-20)",
+        "sleep(3000)"
       );
 
       for (const asyncFunction of asyncFunctions) {
